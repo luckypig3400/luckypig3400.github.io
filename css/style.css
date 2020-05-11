@@ -3,7 +3,9 @@ body {
     color: gray;
     font-weight: 400;
     font-size: 1rem;
-    background: #000
+    background: #000;
+    overflow-x: hidden;
+    /*隱藏左右滑動的捲動條*/
 }
 
 ::-moz-selection {
