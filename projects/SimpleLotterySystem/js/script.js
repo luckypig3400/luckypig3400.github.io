@@ -1,4 +1,6 @@
-var data = ['Phone7', 'Ipad', '三星筆記本', '佳能相機', '惠普印表機', '謝謝參與', '100元充值卡', '1000元超市購物券'],
+var data = ["奇多","奇多","奇多","奇多","奇多","奇多","奇多","奇多","奇多","奇多","奇多","奇多","奇多","奇多","奇多",
+            "立頓奶茶","立頓奶茶","立頓奶茶","立頓奶茶","立頓奶茶","立頓奶茶","立頓奶茶","立頓奶茶","立頓奶茶","立頓奶茶","立頓奶茶","立頓奶茶","立頓奶茶","立頓奶茶","立頓奶茶","立頓奶茶","立頓奶茶","立頓奶茶","立頓奶茶","立頓奶茶",
+            "蝴蝶餅乾","蝴蝶餅乾","蝴蝶餅乾","蝴蝶餅乾","蝴蝶餅乾","蛋黃派","棒棒糖","乖乖軟糖"],
     timer = null, //定時器
     flag = 0, //用於鍵盤事件狀態標記
     random = 0;//用於紀錄抽獎的獎項的陣列
@@ -30,14 +32,16 @@ function playFun() {
     clearInterval(timer);
     timer = setInterval(function () {
         random = Math.floor(Math.random() * data.length);
-        title.innerHTML = data[random];
+        if(data.length == 0)title.innerHTML = "獎項都抽完啦`(*>﹏<*)′";
+        else title.innerHTML = data[random];
     }, 50);
     play.style.background = '#999';
 }
 //停止抽獎
 function stopFun() {
     clearInterval(timer);
-    //data.splice(random-1,1);
+    data.splice(random-1,1);//從陣列抽出該獎項後刪除
+    console.log(data.length);//debug用
     var play = document.getElementById('play');
     play.style.background = '#036';
     
