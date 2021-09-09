@@ -1,0 +1,30 @@
+.title {
+    text-align: center;
+}
+
+.p {
+    text-align: center;
+    padding-top: 90%;    
+}
+
+.word1 {
+    position: absolute;
+    top: 15%;
+    bottom: 15px;
+    margin: 3px;
+    width: 49%;
+    background-color: chartreuse;
+    font-size: 72px;
+    text-align: center;
+}
+
+.word2 {
+    position: absolute;
+    top: 15%;
+    bottom: 15px;
+    left: 50%;
+    width: 49%;
+    background-color: cornsilk;
+    font-size: 72px;
+    text-align: center;
+}
