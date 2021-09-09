@@ -4,7 +4,7 @@
 
 .p {
     text-align: center;
-    padding-top: 90%;    
+      
 }
 
 .word1 {
@@ -14,7 +14,7 @@
     margin: 3px;
     width: 49%;
     background-color: chartreuse;
-    font-size: 132px;
+    font-size: 96px;
     text-align: center;
 }
 
@@ -25,6 +25,6 @@
     left: 50%;
     width: 49%;
     background-color: cornsilk;
-    font-size: 132px;
+    font-size: 96px;
     text-align: center;
 }
